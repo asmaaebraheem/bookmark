@@ -41,7 +41,7 @@ function bookmarkShow(){
 
 var result=``;
 for(var i=0;i<arrBookmark.length;i++){
-    if(arrBookmark[i].url.contains('com'))
+   if(arrBookmark[i].url.includes('com')){
     result+=`<div class="container resultColor d-flex  justify-content-between p-4 shadow my-5">
     <h3>${arrBookmark[i].nameMark}</h3>
 <div >
@@ -50,7 +50,9 @@ for(var i=0;i<arrBookmark.length;i++){
    </div>
 </div>
 `
+   }
 }
+
 
 bookmarkResult.innerHTML=result;
 }
