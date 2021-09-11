@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmark</title>
+  </head>
+
+<body onload="bookmarkShow()">
+  <section class="container">
+    <h1>Bookmarker</h1>
+    <hr>
+ <div class="color p-5 container text-center">
+      <h3>Bookmark your favorite sites</h3>
+      <label class="text-center py-2">Site Name</label>
+      <input type='text' class="form-control py-2" name="" placeholder="Bookmark Name" id="markName">
+     
+      <label class="text-center py-2">Website Url</label>
+      <input type='text' class="form-control py-2" name="" placeholder="Bookmark Url" id="markUrl">
+     
+     <button  onclick=" bookmarkSubmit()"  class="btn p-2  bg-primary submit mt-3">Submit Button</button>
+
+
+
+   </div>
+  </section>
+
+
+
+  <div class="bg-white p-4"></div>
+
+
+
+      <div class="bookmarkResult p-4"  id='bookmarkResult'>
+
+        <div class="row p-4 ">
+
+          <div class="col-md-12">
+    
+    <!-- <div class="container resultColor d-flex justify-content-between">
+     <h3>${name}</h3>
+    <button class="bg-primary"> <a href="${url}"></a>Visit</button>
+    <button class="bg-danger " onclick="deleteBookmark()">Delete</button>
+    </div> -->
+    
+      </div>
+      
+  </div>
+  
+</div>
+<hr class="container">
+<footer class="container">© 2019 Bookmarker Inc.</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
